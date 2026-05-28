@@ -1,0 +1,27 @@
+.
+├── arch
+├── cs
+├── devpos
+├── git-memory.md
+├── node
+│   ├── drill
+│   └── lab
+├── projects
+├── readme.md
+├── reglament.md
+├── structure.txt
+└── utils
+.
+├── .gitkeep
+├── arch
+├── cs
+├── devpos
+├── git-memory.md
+├── node
+│   ├── drill
+│   └── lab
+├── projects
+├── readme.md
+├── reglament.md
+├── structure.txt
+└── utils
