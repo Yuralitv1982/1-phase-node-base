@@ -1,0 +1,75 @@
+Разбираем архитектурный чертеж. Каждый блок здесь выполняет конкретную задачу по защите твоего кода от хаоса.
+
+(Let's break down the architectural blueprint. Each block here performs a specific task to protect your code from chaos.)
+1. Именование (Naming Conventions)
+
+Это твой словарь проекта. Правильное именование убирает необходимость писать лишние комментарии.
+(This is your project's vocabulary. Proper naming removes the need to write redundant comments.)
+
+    Переменные (Variables): Разрешен только camelCase (для обычных данных) и UPPER_CASE (для глобальных констант). Символ _ в начале разрешен (обычно для неиспользуемых аргументов). / Only camelCase (for regular data) and UPPER_CASE (for global constants) are allowed. A leading _ is permitted (usually for unused arguments).
+
+    Булевы значения (Booleans): Обязаны отвечать на вопрос (is, has, can, should). Ты сразу понимаешь, что isActive — это true/false, а не объект. / Must answer a question (is, has, can, should). You immediately know that isActive is true/false, not an object.
+
+    Функции (Functions): Должны начинаться с глагола действия (get, set, fetch и т.д.). Функция — это действие, и ее имя должно это отражать. / Must start with an action verb (get, set, fetch, etc.). A function is an action, and its name must reflect that.
+
+    Классы (Classes): Только PascalCase. Это стандарт ООП. / PascalCase only. This is the OOP standard.
+
+2. Сложность (Complexity)
+
+Защита от «кода Раджеша» и бесконечных if/else.
+(Protection against "Rajesh code" and endless if/else loops.)
+
+    sonarjs/cognitive-complexity: Установлен лимит 15. Если функция слишком сложна для восприятия мозгом, линтер заставит тебя разбить ее на более мелкие модули. / Limit set to 15. If a function is too complex for the brain to process, the linter will force you to break it down into smaller modules.
+
+    sonarjs/no-identical-functions: Запрет на copy-paste. Если логика дублируется — выноси её в отдельную утилиту. / Ban on copy-paste. If logic is duplicated, move it into a separate utility.
+
+3. Безопасность (Security)
+
+Базовые предохранители для серверной логики.
+(Basic safety switches for server logic.)
+
+    no-console: Разрешает только warn и error. Защищает продакшен от утечки данных и мусора в логах. / Allows only warn and error. Protects production from data leaks and garbage in logs.
+
+    consistent-return: Функция либо всегда возвращает значение, либо никогда. Защищает от внезапных undefined. / A function either always returns a value or never does. Protects against sudden undefined values.
+
+    no-unused-vars: Выдает ошибку на мертвый код. Паттерн ^_ позволяет проигнорировать переменную, если ты обязан ее объявить (например, в коллбэках), но не используешь. / Throws an error on dead code. The ^_ pattern allows you to ignore a variable if you must declare it (e.g., in callbacks) but don't use it.
+
+    security/detect-object-injection: Предупреждает, если ключи объекта формируются динамически из пользовательского ввода (защита от Prototype Pollution). / Warns if object keys are generated dynamically from user input (protection against Prototype Pollution).
+
+4. Импорты (Imports)
+
+Организация связей между файлами.
+(Organization of connections between files.)
+
+    import-x/no-unresolved: Падает, если ты импортируешь несуществующий файл или опечатался в пути. / Fails if you import a non-existent file or make a typo in the path.
+
+    import-x/no-cycle: Критическое архитектурное правило. Запрещает циклические зависимости (А зависит от Б, а Б от А). Циклы убивают Node.js приложения. / A critical architectural rule. Forbids circular dependencies (A depends on B, and B on A). Cycles kill Node.js applications.
+
+    import-x/no-default-export: Заставляет использовать именованные экспорты (export const). Это облегчает рефакторинг и автоимпорт в Neovim. / Forces the use of named exports (export const). This makes refactoring and auto-importing in Neovim easier.
+
+    import-x/order: Принудительно сортирует импорты (сначала системные, потом библиотеки, потом локальные) и ставит между ними пустые строки. / Forcibly sorts imports (system first, then libraries, then local) and puts empty lines between them.
+
+5. Асинхронность (Asynchronicity)
+
+Node.js однопоточен, работа с I/O критически важна.
+(Node.js is single-threaded, I/O handling is critical.)
+
+    @typescript-eslint/no-floating-promises: Одно из самых важных правил! Запрещает «бросать» промисы. Каждый промис должен быть дождан (await) или обработан (.catch). Иначе — утечки памяти. / One of the most important rules! Forbids "floating" promises. Every promise must be awaited (await) or handled (.catch). Otherwise — memory leaks.
+
+    promise/prefer-await-to-then: Запрещает старый синтаксис цепочек .then().catch(). Только современный async/await. / Forbids the old syntax of .then().catch() chains. Only modern async/await.
+
+6. Архитектура и Стиль (Architecture & Style)
+
+    unicorn/filename-case: Файлы должны называться в camelCase (например, userService.js). Единый стандарт файловой системы. / Files must be named in camelCase (e.g., userService.js). A unified file system standard.
+
+    unicorn/prefer-module: Заставляет писать в современном стандарте ECMAScript Modules, а не в устаревшем CommonJS. / Forces writing in the modern ECMAScript Modules standard, not the outdated CommonJS.
+
+    unicorn/no-abusive-eslint-disable: Запрещает писать просто // eslint-disable. Если отключаешь правило, обязан явно указать, какое именно (например, // eslint-disable-next-line no-console). / Forbids writing simply // eslint-disable. If you disable a rule, you must explicitly specify which one.
+
+7. Документация (Documentation)
+
+    jsdoc/*: Выдает предупреждения, если у публичных функций нет JSDoc-комментариев с описанием параметров и возвращаемых значений. / Issues warnings if public functions lack JSDoc comments describing parameters and return values.
+
+Этот конфиг — жесткий, но справедливый прораб. Он заберет на себя всю рутину по проверке синтаксиса, оставив тебе только чистую логику.
+
+(This config is a strict but fair foreman. It will take over all the routine syntax checking, leaving you with only pure logic.)

@@ -1,0 +1,12 @@
+.
+├── .prettierrc
+├── eslint.config.mjs
+├── eslint.txt
+├── favicon.svg
+├── index.html
+├── package.json
+├── reset.css
+├── script.js
+├── structure.txt
+├── style.css
+└── tsconfig.json

@@ -15,3 +15,13 @@ for (let i = 0; i < 100000; i++) {
 }
 
 console.log('Цикл завершен, функция скомпилирована.');
+
+
+let result = calculateTarget(10, 20);
+
+const myData = { name: "Ivan" }
+
+
+
+
+
