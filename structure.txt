@@ -115,3 +115,85 @@
 ├── utils
 │   └── .gitkeep
 └── warm-up.md
+.
+├── 2026-07-18_21-13-58
+│   └── drill-21-12
+│       ├── .prettierrc
+│       ├── eslint.config.mjs
+│       ├── eslint.txt
+│       ├── favicon.svg
+│       ├── index.html
+│       ├── package.json
+│       ├── reset.css
+│       ├── script.js
+│       ├── structure.txt
+│       ├── style.css
+│       └── tsconfig.json
+├── 2026-07-18_21-19-31
+│   └── drill-21-12
+│       ├── .prettierrc
+│       ├── eslint.config.mjs
+│       ├── eslint.txt
+│       ├── favicon.svg
+│       ├── index.html
+│       ├── package.json
+│       ├── reset.css
+│       ├── script.js
+│       ├── structure.txt
+│       ├── style.css
+│       └── tsconfig.json
+├── cs
+│   ├── .gitkeep
+│   └── dev_labs
+│       ├── drill-19-27
+│       ├── drill-20-42
+│       └── parser
+├── drill-21-12
+│   ├── .prettierrc
+│   ├── eslint.config.mjs
+│   ├── eslint.txt
+│   ├── favicon.svg
+│   ├── index.html
+│   ├── package.json
+│   ├── reset.css
+│   ├── script.js
+│   ├── structure.txt
+│   ├── style.css
+│   └── tsconfig.json
+├── git-memory.md
+├── metrics
+│   └── report
+│       ├── 01-07-26.md
+│       ├── 06-26
+│       │   ├── 01-06-26.md
+│       │   ├── 02-06-26.md
+│       │   ├── 13-06-26.md
+│       │   ├── 28-06-26.md
+│       │   └── 30-06-26.md
+│       ├── 12-07-26.md
+│       ├── 13-07-26.md
+│       ├── 18-07-26.md
+│       └── pattern
+│           ├── report.md
+│           └── weekly.md
+├── node
+│   ├── .gitkeep
+│   ├── drill
+│   │   ├── .gitkeep
+│   │   ├── 01-06-26
+│   │   ├── 31-05-26
+│   │   └── drill-18-52
+│   ├── lab
+│   │   ├── .gitkeep
+│   │   ├── drill-13-07_18-01
+│   │   ├── drill-20-59
+│   │   ├── drill-21-20
+│   │   └── test-ast
+│   └── pracrtic-node
+│       └── .gitkeep
+├── readme.md
+├── reglament.md
+├── structure.txt
+├── utils
+│   └── .gitkeep
+└── warm-up.md
