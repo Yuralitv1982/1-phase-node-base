@@ -1,8 +1,4 @@
 .
-├── arch
-│   └── .gitkeep
-├── backend
-│   └── .gitkeep
 ├── cs
 │   ├── .gitkeep
 │   └── dev_labs
@@ -12,7 +8,6 @@
 │       │   ├── eslint.txt
 │       │   ├── favicon.svg
 │       │   ├── index.html
-│       │   ├── node_modules -> /home/yurec/develop/master_lab/node_modules
 │       │   ├── package.json
 │       │   ├── reset.css
 │       │   ├── script.js
@@ -25,7 +20,6 @@
 │       │   ├── eslint.txt
 │       │   ├── favicon.svg
 │       │   ├── index.html
-│       │   ├── node_modules -> /home/yurec/develop/master_lab/node_modules
 │       │   ├── package.json
 │       │   ├── reset.css
 │       │   ├── script.js
@@ -33,11 +27,8 @@
 │       │   ├── style.css
 │       │   └── tsconfig.json
 │       └── parser
-├── devpos
-│   └── .gitkeep
 ├── git-memory.md
 ├── metrics
-│   ├── global-time.txt
 │   └── report
 │       ├── 01-07-26.md
 │       ├── 06-26
@@ -47,6 +38,7 @@
 │       │   ├── 28-06-26.md
 │       │   └── 30-06-26.md
 │       ├── 12-07-26.md
+│       ├── 13-07-26.md
 │       └── pattern
 │           ├── report.md
 │           └── weekly.md
@@ -56,136 +48,35 @@
 │   │   ├── .gitkeep
 │   │   ├── 01-06-26
 │   │   │   └── script.js
-│   │   └── 31-05-26
-│   │       └── script.js
-│   ├── lab
-│   │   ├── .gitkeep
-│   │   ├── cashe-test.js
-│   │   ├── drill-20-59
-│   │   │   ├── .prettierrc
-│   │   │   ├── eslint.config.mjs
-│   │   │   ├── eslint.txt
-│   │   │   ├── favicon.svg
-│   │   │   ├── image.png
-│   │   │   ├── index.html
-│   │   │   ├── node_modules -> /home/yurec/develop/master_lab/node_modules
-│   │   │   ├── package.json
-│   │   │   ├── reset.css
-│   │   │   ├── script.js
-│   │   │   ├── structure.txt
-│   │   │   ├── style.css
-│   │   │   └── tsconfig.json
-│   │   ├── drill-21-20
-│   │   │   ├── .prettierrc
-│   │   │   ├── eslint.config.mjs
-│   │   │   ├── eslint.txt
-│   │   │   ├── favicon.svg
-│   │   │   ├── index.html
-│   │   │   ├── node_modules -> /home/yurec/develop/master_lab/node_modules
-│   │   │   ├── package.json
-│   │   │   ├── reset.css
-│   │   │   ├── script.js
-│   │   │   ├── structure.txt
-│   │   │   ├── style.css
-│   │   │   └── tsconfig.json
-│   │   └── test-ast
-│   │       ├── node_modules
-│   │       │   ├── .bin
-│   │       │   │   └── acorn -> ../acorn/bin/acorn
-│   │       │   ├── .package-lock.json
-│   │       │   └── acorn
-│   │       │       ├── bin
-│   │       │       │   └── acorn
-│   │       │       ├── CHANGELOG.md
-│   │       │       ├── dist
-│   │       │       │   ├── acorn.d.mts
-│   │       │       │   ├── acorn.d.ts
-│   │       │       │   ├── acorn.js
-│   │       │       │   ├── acorn.mjs
-│   │       │       │   └── bin.js
-│   │       │       ├── LICENSE
-│   │       │       ├── package.json
-│   │       │       └── README.md
-│   │       ├── package-lock.json
+│   │   ├── 31-05-26
+│   │   │   └── script.js
+│   │   └── drill-18-52
+│   │       ├── .prettierrc
+│   │       ├── eslint.config.mjs
+│   │       ├── eslint.txt
+│   │       ├── favicon.svg
+│   │       ├── index.html
 │   │       ├── package.json
-│   │       └── script.js
-│   └── pracrtic-node
-│       ├── .gitkeep
-│       └── case-1-3.js
-├── projects
-│   ├── .gitkeep
-│   ├── backend
-│   │   └── .gitkeep
-│   └── node
-│       └── .gitkeep
-├── readme.md
-├── reglament.md
-├── roadmap.md
-├── structure.txt
-├── utils
-│   └── .gitkeep
-└── warm-up.md
-.
-├── arch
-│   └── .gitkeep
-├── backend
-│   └── .gitkeep
-├── cs
-│   ├── .gitkeep
-│   └── dev_labs
-│       ├── drill-19-27
-│       │   ├── .prettierrc
-│       │   ├── eslint.config.mjs
-│       │   ├── eslint.txt
-│       │   ├── favicon.svg
-│       │   ├── index.html
-│       │   ├── package.json
-│       │   ├── reset.css
-│       │   ├── script.js
-│       │   ├── structure.txt
-│       │   ├── style.css
-│       │   └── tsconfig.json
-│       ├── drill-20-42
-│       │   ├── .prettierrc
-│       │   ├── eslint.config.mjs
-│       │   ├── eslint.txt
-│       │   ├── favicon.svg
-│       │   ├── index.html
-│       │   ├── package.json
-│       │   ├── reset.css
-│       │   ├── script.js
-│       │   ├── structure.txt
-│       │   ├── style.css
-│       │   └── tsconfig.json
-│       └── parser
-├── devpos
-│   └── .gitkeep
-├── git-memory.md
-├── metrics
-│   ├── global-time.txt
-│   └── report
-│       ├── 01-07-26.md
-│       ├── 06-26
-│       │   ├── 01-06-26.md
-│       │   ├── 02-06-26.md
-│       │   ├── 13-06-26.md
-│       │   ├── 28-06-26.md
-│       │   └── 30-06-26.md
-│       ├── 12-07-26.md
-│       └── pattern
-│           ├── report.md
-│           └── weekly.md
-├── node
-│   ├── .gitkeep
-│   ├── drill
-│   │   ├── .gitkeep
-│   │   ├── 01-06-26
-│   │   │   └── script.js
-│   │   └── 31-05-26
-│   │       └── script.js
+│   │       ├── reset.css
+│   │       ├── script.js
+│   │       ├── structure.txt
+│   │       ├── style.css
+│   │       └── tsconfig.json
 │   ├── lab
 │   │   ├── .gitkeep
 │   │   ├── cashe-test.js
+│   │   ├── drill-13-07_18-01
+│   │   │   ├── .prettierrc
+│   │   │   ├── eslint.config.mjs
+│   │   │   ├── eslint.txt
+│   │   │   ├── favicon.svg
+│   │   │   ├── index.html
+│   │   │   ├── package.json
+│   │   │   ├── reset.css
+│   │   │   ├── script.js
+│   │   │   ├── structure.txt
+│   │   │   ├── style.css
+│   │   │   └── tsconfig.json
 │   │   ├── drill-20-59
 │   │   │   ├── .prettierrc
 │   │   │   ├── eslint.config.mjs
@@ -218,15 +109,8 @@
 │   └── pracrtic-node
 │       ├── .gitkeep
 │       └── case-1-3.js
-├── projects
-│   ├── .gitkeep
-│   ├── backend
-│   │   └── .gitkeep
-│   └── node
-│       └── .gitkeep
 ├── readme.md
 ├── reglament.md
-├── roadmap.md
 ├── structure.txt
 ├── utils
 │   └── .gitkeep
