@@ -2,7 +2,6 @@
   "name": "master_lab",
   "version": "1.0.0",
   "description": "Master environment for drills",
-  "type": "module",
   "main": "script.js",
   "scripts": {
     "start": "serve . -p 8080 -s",
